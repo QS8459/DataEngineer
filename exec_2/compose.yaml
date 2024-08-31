@@ -1,0 +1,6 @@
+services:
+    web-01:
+      build: .
+      volumes:
+         - /home/sardor/bg_data/exec_2/src:/src
+
