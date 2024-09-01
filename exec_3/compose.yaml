@@ -1,0 +1,9 @@
+services:
+   exec03:
+     build:
+       context: .
+       dockerfile: Dockerfile
+     stdin_open: true
+     tty: true
+     ports:
+       - "8080:80"
