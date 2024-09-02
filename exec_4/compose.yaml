@@ -1,0 +1,11 @@
+services:
+  exec04:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true  # Allows interactive mode
+    tty: true         # Allocates a pseudo-TTY
+    volumes:
+      - /home/sardor/bg_data/exec_4/src:/src
+    ports:
+      - "8008:80" 
